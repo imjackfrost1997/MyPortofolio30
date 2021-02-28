@@ -52,6 +52,10 @@ ul {
   margin-bottom: 5rem;
   color: #fff;
 }
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
 main {
   display: flex;
   align-items: center;
@@ -356,6 +360,130 @@ address a {
 }
 .legal p {
   color: #fff;
+}
+.customer-form {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-title {
+  text-align: center;
+  padding-bottom: 2em;
+}
+.form-title h2 {
+  font-size: 3rem;
+  color: #111;
+  word-spacing: -0.5rem;
+  line-height: 1.7;
+}
+.form-title p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form {
+  background: #fff;
+  width: 50rem;
+  max-width: 100%;
+  padding: 2em;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.form-control {
+  height: 4.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.form-control input {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 0 1em;
+  border: 0.1rem solid lightgray;
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto Mono', sans-serif;
+}
+.form-control input,
+textarea {
+  word-spacing: -0.2rem;
+}
+.form-control input:focus,
+.form-control input:not(:placeholder-shown),
+textarea:focus,
+textarea:not(:placeholder-shown) {
+  border: 0.2rem solid #4169e1;
+}
+.form-control label {
+  position: absolute;
+  display: inline-block;
+  padding-left: 1em;
+  transition: all 0.1s;
+}
+.form-control input:focus + label,
+.form-control input:not(:placeholder-shown) + label {
+  transform: translateY(-2.3rem);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #fff;
+  padding: 0.1em 0.4em;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+  color: #4169e1;
+}
+textarea {
+  width: 100%;
+  min-height: 15rem;
+  resize: none;
+  border-radius: 0.3rem;
+  border: 0.1rem solid lightgray;
+  outline: none;
+  padding: 1em;
+  font-size: 2rem;
+}
+.submit-btn {
+  margin-top: 2rem;
+  position: relative;
+  height: 4.5rem;
+  background: rgb(40, 44, 52);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.submit-btn input {
+  height: 100%;
+  border: none;
+  outline: none;
+  display: inline-block;
+  background: rgb(40, 44, 52);
+  color: #fff;
+  font-size: 1.6rem;
+  padding-left: 1em;
+  cursor: pointer;
+  font-family: 'Roboto Mono', sans-serif;
+  word-spacing: -0.4rem;
+  font-weight: 500;
+}
+.submit-btn:hover,
+.submit-btn:hover input {
+  background: #4169e1;
+}
+.submit-btn label {
+  padding: 0.75em;
+  cursor: pointer;
+}
+.submit-btn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #fff;
 }
 @media only screen and (max-width: 65em) {
   .nav {
