@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout with sidebar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    
+    <main>
+        <header>
+            <a href="#" class="logo">Robert<br>Sampang</a>
+            <div class="menu-btn">
+                <button type="button" class="menu hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></button>
+                <button type="button" class="menu close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg></button>
+            </div>
+        </header>
+        <aside>
+            <nav class="nav">
+                <a href="#" class="logo">Robert<br>Sampang</a>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showLinks()">About</a></li>
+                    <li><a href="#services" onclick="showLinks()">Services</a></li>
+                    <li><a href="#faq" onclick="showLinks()">FAQ</a></li>
+                    <li><a href="#" onclick="showLinks()">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="introduction">
+            <div class="content">
+                <h1>Hi I am Robert Sampang</h1>
+                <h5>Web Developer /  Web Designer</h5>
+                <div class="cta">
+                    <a href="message.html" class="btn">Connect with me</a>
+                    <a href="project.html" class="btn">View projects</a>
+                </div>
+            </div>
+        </section>
+        <div class="hero">
+            <img src="images/myshape.svg" alt="mybg"/>
+        </div>
+    </main>
+
+    <section class="services" id="services">
+        <h2 class="title-heading">Services</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-title">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi tempora cumque quia quisquam nesciunt, incidunt iure nam quis.</p>
+                </div>
+                <div class="card-pricing">
+                    <p>$700</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="fab fa-figma"></i>
+                    <h3>Web Design</h3>
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores aliquam nulla. Provident, dignissimos.</p>
+                </div>
+                <div class="card-pricing">
+                    <p>$1000</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Web Hosting</h3>
+                </div>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere blanditiis sed esse reprehenderit eum, voluptate tenetur. Obcaecati at explicabo facere distinctio minus, sed ducimus similique.</p>
+                </div>
+                <div class="card-pricing">
+                    <p>$20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <h2 class="title-heading">FAQ</h2>
+        <div class="details">
+            <details>
+                <summary>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</summary>
+                <div class="faq-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae aliquid similique deleniti nisi quidem eius. Autem officiis alias fugiat, nobis vero earum exercitationem omnis ullam mollitia pariatur saepe magni esse totam.</p>
+                </div>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor sit, amet consectetur adipisicing?</summary>
+                <div class="faq-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quo ea magnam adipisci! Porro, quae necessitatibus. Cumque, molestias placeat.</p>
+                </div>
+            </details>
+            <details>
+                <summary>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum?</summary>
+                <div class="faq-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sint dicta libero mollitia dolor nostrum voluptatum officiis error, rerum hic quod quae adipisci nisi?</p>
+                </div>
+            </details>
+            <details>
+                <summary>Lorem ipsum dolor sit, amet consectetur adipisicing?</summary>
+                <div class="faq-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quo ea magnam adipisci! Porro, quae necessitatibus. Cumque, molestias placeat.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <footer>
+        <address>
+            <p>wwwwwqqqqaaass       SSSSSW34RESSSSSSD</p>
+            <p></p>
+            <p></p>
+        </address>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
